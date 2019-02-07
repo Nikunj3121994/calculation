@@ -1,0 +1,72 @@
+
+<p>
+    For more calculation about engineering, follow link given below:
+</p>
+<h1>Volume</h1>
+<table>
+  <tr>
+    <th>
+
+
+<input type="button" value="Arithmetic sequence" onclick="window.location.href='http://www.calculation.net.in/mathcalculation/arithmetic-sequence/'" /></th><th>
+<input type="button" value="BMI and BMR" onclick="window.location.href='http://www.calculation.net.in/mathcalculation/bmi-and-bmr/'" /></th><th>
+<input type="button" value="Circle" onclick="window.location.href='http://www.calculation.net.in/mathcalculation/circle-perimeter/'" /></th></tr><tr><th>
+<input type="button" value="Complex number add" onclick="window.location.href='http://www.calculation.net.in/mathcalculation/complex-number-add/'" /></th><th>
+<input type="button" value="Complex number division" onclick="window.location.href='http://www.calculation.net.in/mathcalculation/complex-number-division/'" /></th><th>
+<input type="button" value="Complex number Multiply" onclick="window.location.href='http://www.calculation.net.in/mathcalculation/complex-number-multiply/'" /></th></tr><tr><th>
+<input type="button" value="Complex number subtract" onclick="window.location.href='http://www.calculation.net.in/mathcalculation/complex-number-subtract/'" /></th><th>
+<input type="button" value="Compound interest" onclick="window.location.href='http://www.calculation.net.in/mathcalculation/compound-interest/'" /></th><th>
+<input type="button" value="Distance(2D)" onclick="window.location.href='http://www.calculation.net.in/mathcalculation/distance-2d/'" /></th></tr><tr><th>
+<input type="button" value="Distance(3D)" onclick="window.location.href='http://www.calculation.net.in/mathcalculation/distance-3d/'" /></th><th>
+<input type="button" value="EMI" onclick="window.location.href='http://www.calculation.net.in/mathcalculation/emi-calculation/'" /></th><th>
+<input type="button" value="Exponent" onclick="window.location.href='http://www.calculation.net.in/mathcalculation/exponent/'" /></th></tr><tr><th>
+<input type="button" value="Factorial" onclick="window.location.href='http://www.calculation.net.in/mathcalculation/factorial-calculator/'" /></th><th>
+<input type="button" value="Geometric sequence" onclick="window.location.href='http://www.calculation.net.in/mathcalculation/geometric-sequence/'" /></th><th>
+<input type="button" value="Half life" onclick="window.location.href='http://www.calculation.net.in/mathcalculation/half-life/'" /></th></tr><tr><th>
+<input type="button" value="Inflation" onclick="window.location.href='http://www.calculation.net.in/mathcalculation/inflation/'" /></th><th>
+<input type="button" value="Installment" onclick="window.location.href='http://www.calculation.net.in/mathcalculation/installment-calculator/'" /></th><th>
+<input type="button" value="Interest" onclick="window.location.href='http://www.calculation.net.in/mathcalculation/interest-calculator/'" /></th></tr><tr><th>
+<input type="button" value="Linear equation" onclick="window.location.href='http://www.calculation.net.in/mathcalculation/linear-equation-solver/'" /></th><th>
+<input type="button" value="Logarithm" onclick="window.location.href='http://www.calculation.net.in/mathcalculation/logarithm/'" /></th><th>
+<input type="button" value="Matrix 2D add" onclick="window.location.href='http://www.calculation.net.in/mathcalculation/matrix-2d-add/'" /></th></tr><tr><th>
+<input type="button" value="Matrix 2D cofactor" onclick="window.location.href='http://www.calculation.net.in/mathcalculation/matrix-2d-cofactor/'" /></th><th>
+<input type="button" value="Matrix 3D add" onclick="window.location.href='http://www.calculation.net.in/mathcalculation/matrix-3d-add/'" /></th><th>
+<input type="button" value="Matrix 3D cofactor" onclick="window.location.href='http://www.calculation.net.in/mathcalculation/matrix-3d-cofactor/'" /></th></tr><tr><th>
+<input type="button" value="Matrix 4D add" onclick="window.location.href='http://www.calculation.net.in/mathcalculation/matrix-4d-add/'" /></th><th>
+<input type="button" value="Matrix 3D determinant" onclick="window.location.href='http://www.calculation.net.in/mathcalculation/matrix-determinant-3d/'" /></th><th>
+<input type="button" value="Matrix 2D determinant" onclick="window.location.href='http://www.calculation.net.in/mathcalculation/matrix-determinat-2d/'" /></th></tr><tr><th>
+<input type="button" value="Matrix inverse 2D" onclick="window.location.href='http://www.calculation.net.in/mathcalculation/matrix-inverse-2d/'" /></th><th>
+<input type="button" value="Matrix inverse 3D" onclick="window.location.href='http://www.calculation.net.in/mathcalculation/matrix-inverse-3d/'" /></th><th>
+<input type="button" value="Matrix multiple 2D" onclick="window.location.href='http://www.calculation.net.in/mathcalculation/matrix-multiply-2d/'" /></th></tr><tr><th>
+<input type="button" value="Matrix multiple 3D" onclick="window.location.href='http://www.calculation.net.in/mathcalculation/matrix-multiply-3d/'" /></th><th>
+<input type="button" value="Matrix subtract 2D" onclick="window.location.href='http://www.calculation.net.in/mathcalculation/matrix-subtract-2d/'" /></th><th>
+<input type="button" value="Matrix subtract 3D" onclick="window.location.href='http://www.calculation.net.in/mathcalculation/matrix-subtract-3d/'" /></th></tr><tr><th>
+<input type="button" value="Matrix subtract 4D" onclick="window.location.href='http://www.calculation.net.in/mathcalculation/matrix-subtract-4d/'" /></th><th>
+<input type="button" value="Matrix transverse 2D" onclick="window.location.href='http://www.calculation.net.in/mathcalculation/matrix-transverse-2d/'" /></th><th>
+<input type="button" value="Matrix transverse 3D" onclick="window.location.href='http://www.calculation.net.in/mathcalculation/matrix-transverse-3d/'" /></th></tr><tr><th>
+<input type="button" value="Percentage" onclick="window.location.href='http://www.calculation.net.in/mathcalculation/percentage1/'" /></th><th>
+<input type="button" value="Percentage" onclick="window.location.href='http://www.calculation.net.in/mathcalculation/percentage2/'" /></th><th>
+<input type="button" value="Percentage" onclick="window.location.href='http://www.calculation.net.in/mathcalculation/percentage3/'" /></th></tr><tr><th>
+<input type="button" value="Percentage" onclick="window.location.href='http://www.calculation.net.in/mathcalculation/percentage4/'" /></th><th>
+<input type="button" value="Percentage" onclick="window.location.href='http://www.calculation.net.in/mathcalculation/percentage5/'" /></th><th>
+<input type="button" value="Permutation" onclick="window.location.href='http://www.calculation.net.in/mathcalculation/permutation-and-combination/'" /></th></tr><tr><th>
+<input type="button" value="Polygon" onclick="window.location.href='http://www.calculation.net.in/mathcalculation/polygon-perimeter/'" /></th><th>
+<input type="button" value="Quadratic equation" onclick="window.location.href='http://www.calculation.net.in/mathcalculation/quadratic-equation-solver/'" /></th><th>
+<input type="button" value="Interest Rate" onclick="window.location.href='http://www.calculation.net.in/mathcalculation/rate-of-interestsimple-interest/'" /></th></tr><tr><th>
+<input type="button" value="Ratio" onclick="window.location.href='http://www.calculation.net.in/mathcalculation/ratio-calculator/'" /></th><th>
+<input type="button" value="Rectangle" onclick="window.location.href='http://www.calculation.net.in/mathcalculation/rectangle-perimeter/'" /></th><th>
+<input type="button" value="Root" onclick="window.location.href='http://www.calculation.net.in/mathcalculation/root/'" /></th></tr><tr><th>
+<input type="button" value="Slope" onclick="window.location.href='http://www.calculation.net.in/mathcalculation/slope/'" /></th><th>
+<input type="button" value="Slope" onclick="window.location.href='http://www.calculation.net.in/mathcalculation/slope2/'" /></th><th>
+<input type="button" value="Square" onclick="window.location.href='http://www.calculation.net.in/mathcalculation/square-perimeter/'" /></th></tr><tr><th>
+<input type="button" value="Time(interest)" onclick="window.location.href='http://www.calculation.net.in/mathcalculation/time-calculatorsimple-interest/'" /></th><th>
+<input type="button" value="Time(in day)" onclick="window.location.href='http://www.calculation.net.in/mathcalculation/timein-year/'" /></th><th>
+<input type="button" value="Time(in year)" onclick="window.location.href='http://www.calculation.net.in/mathcalculation/timein-year-2/'" /></th></tr><tr><th>
+<input type="button" value="Triangle" onclick="window.location.href='http://www.calculation.net.in/mathcalculation/triangle-perimeter/'" /></th><th>
+<input type="button" value="Value after t time" onclick="window.location.href='http://www.calculation.net.in/mathcalculation/value-after-t-time/'" /></th><th>
+<input type="button" value="Vector 2D add" onclick="window.location.href='http://www.calculation.net.in/mathcalculation/vector-2d-add/'" /></th></tr><tr><th>
+<input type="button" value="Vector 2D subtract" onclick="window.location.href='http://www.calculation.net.in/mathcalculation/vector-2d-subtract/'" /></th><th>
+<input type="button" value="Vector 3D add" onclick="window.location.href='http://www.calculation.net.in/mathcalculation/vector-3d-add/'" /></th><th>
+<input type="button" value="Vector 3D subtract" onclick="window.location.href='http://www.calculation.net.in/mathcalculation/vector-3d-subtract/'" /></th></tr><tr><th>
+<input type="button" value="Vector 4D add" onclick="window.location.href='http://www.calculation.net.in/mathcalculation/vector-4-d-add/'" /></th><th>
+<input type="button" value="Vector 4D subtract" onclick="window.location.href='http://www.calculation.net.in/mathcalculation/vector-4-d-subtract/'" /></th></tr></table>
