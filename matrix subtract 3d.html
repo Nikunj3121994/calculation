@@ -4,43 +4,63 @@
 function calculate()
 {
 
-var n =parseFloat(document.getElementById("n").value);
-var r =parseFloat(document.getElementById("r").value);
+var a11 =parseFloat(document.getElementById("a11").value);
+var a12 =parseFloat(document.getElementById("a12").value);
+var a13 =parseFloat(document.getElementById("a13").value);
 
-if(n<0 || r<0){
-                 document.getElementById("warning").innerHTML = "Please enter a positive value.......";
-               }
-   if(n>=0 && r>0){
-                   document.getElementById("warning").innerHTML = "";
-                   }
-
-				   // find n !
-				   var factorial1 = 1;
-//recursive function
-for(i=1;i<=n;i++){
-factorial1 = factorial1 * i;
-}
-
-				   // find r !
-				   var factorial2 = 1;
-//recursive function
-for(i=1;i<=r;i++){
-factorial2 = factorial2 * i;
-}
+var a21 =parseFloat(document.getElementById("a21").value);
+var a22 =parseFloat(document.getElementById("a22").value);
+var a23 =parseFloat(document.getElementById("a23").value);
 
 
-				   // find (n-r) !
-				   var factorial3 = 1;
-//recursive function
-for(i=1;i<=n-r;i++){
-factorial3 = factorial3 * i;
-}
+var a31 =parseFloat(document.getElementById("a31").value);
+var a32 =parseFloat(document.getElementById("a32").value);
+var a33 =parseFloat(document.getElementById("a33").value);
 
-var p = factorial1/factorial3;
-var c = factorial1/(factorial2*factorial3);
 
-document.getElementById('p').value = p;
-document.getElementById('c').value = c;
+
+var b11 =parseFloat(document.getElementById("b11").value);
+var b12 =parseFloat(document.getElementById("b12").value);
+var b13 =parseFloat(document.getElementById("b13").value);
+
+
+var b21 =parseFloat(document.getElementById("b21").value);
+var b22 =parseFloat(document.getElementById("b22").value);
+var b23 =parseFloat(document.getElementById("b23").value);
+
+
+var b31 =parseFloat(document.getElementById("b31").value);
+var b32 =parseFloat(document.getElementById("b32").value);
+var b33 =parseFloat(document.getElementById("b33").value);
+
+var c11 = a11-b11;
+var c12 = a12-b12;
+var c13 = a13-b13;
+
+var c21 = a21-b21;
+var c22 = a22-b22;
+var c23 = a23-b23;
+
+var c31 = a31-b31;
+var c32 = a32-b32;
+var c33 = a33-b33;
+
+
+document.getElementById('c11').value =c11;
+document.getElementById('c12').value =c12;
+document.getElementById('c13').value =c13;
+
+
+document.getElementById('c21').value =c21;
+document.getElementById('c22').value =c22;
+document.getElementById('c23').value =c23;
+
+document.getElementById('c31').value =c31;
+document.getElementById('c32').value =c32;
+document.getElementById('c33').value =c33;
+
+
+
 	
 }
 
@@ -56,7 +76,7 @@ td,p
 input
 {
     font-size:14pt;
-    width:100px;
+    width:80px;
 }
 select,form,option{
 width:100px;
@@ -72,35 +92,130 @@ font-size:14pt;
 
 <table border="0" align="center" id="table">
 <tr>
-   <td align="right">N =</td>
-   <td><input id="n" type="number" onchange="calculate()"  ;autofocus /></td>
+Matrix A =
 </tr>
+   </table>
 
+
+<table border="0" align="center" id="table">
 <tr>
-   <td align="right">r =</td>
-   <td><input id="r" type="number" onchange="calculate()"  ;autofocus /></td>
-</tr>
+   <td><input id="a11" type="number" onchange="calculate()"  ;autofocus /></td>
+  
+   <td><input id="a12" type="number" onchange="calculate()";autofocus /></td>
 
+   <td><input id="a13" type="number" onchange="calculate()"  ;autofocus /></td>
 
+   </table>
+  
+<table border="0" align="center" id="table">
 <tr>
+   <td><input id="a21" type="number" onchange="calculate()"  ;autofocus /></td>
+  
+   <td><input id="a22" type="number" onchange="calculate()";autofocus /></td>
 
-   <td align="right">Permutation =</td>
-   <td><input id="p" type="number" onchange="calculate()";/></td>
+   <td><input id="a23" type="number" onchange="calculate()"  ;autofocus /></td>
 
-</tr>
-
+   </table>
+  
+  <table border="0" align="center" id="table">
 <tr>
+   <td><input id="a31" type="number" onchange="calculate()"  ;autofocus /></td>
+  
+   <td><input id="a32" type="number" onchange="calculate()";autofocus /></td>
 
-   <td align="right">Combination =</td>
-   <td><input id="c" type="number" onchange="calculate()";/></td>
+   <td><input id="a33" type="number" onchange="calculate()"  ;autofocus /></td>
 
+   </table>
+  
+  
+  
+  
+  
+  
+  
+<table border="0" align="center" id="table">
+<tr>
+Matrix B =
+</tr>
+   </table>
+
+   
+<table border="0" align="center" id="table">
+<tr>
+   <td><input id="b11" type="number" onchange="calculate()"  ;autofocus /></td>
+  
+   <td><input id="b12" type="number" onchange="calculate()";autofocus /></td>
+
+   <td><input id="b13" type="number" onchange="calculate()"  ;autofocus /></td>
+
+   </table>
+  
+<table border="0" align="center" id="table">
+<tr>
+   <td><input id="b21" type="number" onchange="calculate()"  ;autofocus /></td>
+  
+   <td><input id="b22" type="number" onchange="calculate()";autofocus /></td>
+
+   <td><input id="b23" type="number" onchange="calculate()"  ;autofocus /></td>
+
+   </table>
+  
+  <table border="0" align="center" id="table">
+<tr>
+   <td><input id="b31" type="number" onchange="calculate()"  ;autofocus /></td>
+  
+   <td><input id="b32" type="number" onchange="calculate()";autofocus /></td>
+
+   <td><input id="b33" type="number" onchange="calculate()"  ;autofocus /></td>
+
+   </table>
+  
+  
+
+
+
+   <br/>
+
+   <table>Matrix C(A-B) =</table>
+<table border="0" align="center" id="table">
+<tr>
+ <td align="right" class="output" id="unitoutputtable">
+    
+ </td>
+    
+    <td><input id="c11" type="number" ;/></td>
+	<td><input id="c12" type="number" ;/></td>
+	<td><input id="c13" type="number" ;/></td>
+   
+</tr>
+<tr>
+ <td align="right" class="output" id="unitoutputtable">
+    
+ </td>
+    
+    <td><input id="c21" type="number" ;/></td>
+	<td><input id="c22" type="number" ;/></td>
+	<td><input id="c23" type="number" ;/></td>
+   
+</tr>
+<tr>
+ <td align="right" class="output" id="unitoutputtable">
+    
+ </td>
+    
+    <td><input id="c31" type="number" ;/></td>
+	<td><input id="c32" type="number" ;/></td>
+	<td><input id="c33" type="number" ;/></td>
+   
 </tr>
 
 
-</table>
 
-</tr>
-</table>
+</table>  
+  
+  
+  
+  
 </tr>
 </body>
 </html><h1>All calculation</h1>

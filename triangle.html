@@ -3,13 +3,13 @@
 function calculate()
 {
   var input1 = parseFloat(document.getElementById("input1").value);
-var input2 = parseFloat(document.getElementById("input2").value);
-var input3 = parseFloat(document.getElementById("input3").value);
+ var input2 = parseFloat(document.getElementById("input2").value);
+ var input3 = parseFloat(document.getElementById("input3").value);
 
-   if(input1<0 || input2<0 || input3<0){
+   if(input1<0 || input2<0|| input3<0){
                  document.getElementById("warning").innerHTML = "Please enter a positive value.......";
                }
-   if(input1>=0 && input2>=0 && input3>=0){
+   if(input1>=0 && input2>=0&& input3>=0){
                    document.getElementById("warning").innerHTML = "";
                    }
 
@@ -19,32 +19,31 @@ for(var i=0;i<input1unit.options.length;i++)
 	  if(input1unit.options[i].selected) input1unitid = i;
     }
 
+
 for(var i=0;i<input2unit.options.length;i++)
     {
 	  if(input2unit.options[i].selected) input2unitid = i;
     }
-
+	
 for(var i=0;i<input3unit.options.length;i++)
     {
 	  if(input3unit.options[i].selected) input3unitid = i;
     }
-	
-	
-scale = [1,0.3048,0.01,0.001,0.0254];
+
+	scale = [1,0.3048,0.01,0.001,0.0254];
 
 var midinput1 = input1*scale[input1unitid];
 var midinput2 = input2*scale[input2unitid];
 var midinput3 = input3*scale[input3unitid];
-var s = (midinput1+midinput2+midinput3)/2;
-var square = s*(s-midinput1)*(s-midinput2)*(s-midinput3);
-var midoutput = Math.sqrt(square);
+
+var midoutput = (midinput1+midinput2+midinput3);
+
 for(var i=0;i<valueunit.options.length;i++)
     {
 	  if(valueunit.options[i].selected) valueunitid = i;
 	  }
-scale1 = [1,0.09290304,1E-4,1E-6,6.4516E-4];
 
-var output = midoutput/scale1[valueunitid];
+var output = midoutput/scale[valueunitid];
 
 document.getElementById('value').value = output;
 }
@@ -76,7 +75,7 @@ font-size:14pt;
 <table border="0" align="center" id="table">
 <tr>
    <td align="right" class="principal" id="unitinputtable">
-    <td align="right">Edge 1</td>
+    <td align="right">Edge 1 =</td>
     </td>
 	   
 	   <td><input id="input1" type="number" onchange="calculate()" ;autofocus /></td>
@@ -98,7 +97,7 @@ font-size:14pt;
 
 <tr>
    <td align="right" class="principal" id="unitinputtable">
-    <td align="right">Edge 2 </td>
+    <td align="right">Edge 2 =</td>
     </td>
 	   
 	   <td><input id="input2" type="number" onchange="calculate()" ;autofocus /></td>
@@ -121,7 +120,7 @@ font-size:14pt;
 
 <tr>
    <td align="right" class="principal" id="unitinputtable">
-    <td align="right">Edge 3 </td>
+    <td align="right">Edge 3 =</td>
     </td>
 	   
 	   <td><input id="input3" type="number" onchange="calculate()" ;autofocus /></td>
@@ -143,17 +142,20 @@ font-size:14pt;
 
 
 
+
+
+
 <tr>
 <td align="right" class="output1" id="unitoutputable"></td>
-<td align="right">Area</td>
+<td align="right">Perimeter =</td>
 <td><input id="value" type="number" onchange="calculate()";/></td>
 <td><select name="heightunit" id="valueunit" onchange="calculate()">
 				  
-				          <option value="1">Square meter</option>
-                          <option value="2">Square foot</option>
-        				  <option value="3">Square centimeter</option>
-                          <option value="4">Square millimeter</option>
-        				  <option value="5">Square inch</option>
+				          <option value="1">meter</option>
+                          <option value="2">foot</option>
+        				  <option value="3">centimeter</option>
+                          <option value="4">millimeter</option>
+        				  <option value="5">inch</option>
                           
     </select>
 </td>

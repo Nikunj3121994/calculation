@@ -20,14 +20,13 @@ for(var i=0;i<input1unit.options.length;i++)
 scale = [1,0.3048,0.01,0.001,0.0254];
 
 var midinput1 = input1*scale[input1unitid];
-var midoutput = 3.14159*midinput1*midinput1;
+var midoutput = 2*3.14159*midinput1;
 for(var i=0;i<valueunit.options.length;i++)
     {
 	  if(valueunit.options[i].selected) valueunitid = i;
 	  }
-scale1 = [1,0.09290304,1E-4,1E-6,6.4516E-4];
 
-var output = midoutput/scale1[valueunitid];
+var output = midoutput/scale[valueunitid];
 
 document.getElementById('value').value = output;
 }
@@ -59,7 +58,7 @@ font-size:14pt;
 <table border="0" align="center" id="table">
 <tr>
    <td align="right" class="principal" id="unitinputtable">
-    <td align="right">Circle Radius </td>
+    <td align="right">Circle Radius =</td>
     </td>
 	   
 	   <td><input id="input1" type="number" onchange="calculate()" ;autofocus /></td>
@@ -81,15 +80,15 @@ font-size:14pt;
 
 <tr>
 <td align="right" class="output1" id="unitoutputable"></td>
-<td align="right">Area</td>
+<td align="right">Perimeter =</td>
 <td><input id="value" type="number" onchange="calculate()";/></td>
 <td><select name="heightunit" id="valueunit" onchange="calculate()">
 				  
-				          <option value="1">Square meter</option>
-                          <option value="2">Square foot</option>
-        				  <option value="3">Square centimeter</option>
-                          <option value="4">Square millimeter</option>
-        				  <option value="5">Square inch</option>
+				          <option value="1">meter</option>
+                          <option value="2">foot</option>
+        				  <option value="3">centimeter</option>
+                          <option value="4">millimeter</option>
+        				  <option value="5">inch</option>
                           
     </select>
 </td>

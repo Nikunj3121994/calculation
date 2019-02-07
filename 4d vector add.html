@@ -4,43 +4,27 @@
 function calculate()
 {
 
-var n =parseFloat(document.getElementById("n").value);
-var r =parseFloat(document.getElementById("r").value);
+var ax =parseFloat(document.getElementById("ax").value);
+var ay =parseFloat(document.getElementById("ay").value);
+var az =parseFloat(document.getElementById("az").value);
+var aw =parseFloat(document.getElementById("aw").value);
 
-if(n<0 || r<0){
-                 document.getElementById("warning").innerHTML = "Please enter a positive value.......";
-               }
-   if(n>=0 && r>0){
-                   document.getElementById("warning").innerHTML = "";
-                   }
-
-				   // find n !
-				   var factorial1 = 1;
-//recursive function
-for(i=1;i<=n;i++){
-factorial1 = factorial1 * i;
-}
-
-				   // find r !
-				   var factorial2 = 1;
-//recursive function
-for(i=1;i<=r;i++){
-factorial2 = factorial2 * i;
-}
+var bx =parseFloat(document.getElementById("bx").value);
+var by =parseFloat(document.getElementById("by").value);
+var bz =parseFloat(document.getElementById("bz").value);
+var bw =parseFloat(document.getElementById("bw").value);
 
 
-				   // find (n-r) !
-				   var factorial3 = 1;
-//recursive function
-for(i=1;i<=n-r;i++){
-factorial3 = factorial3 * i;
-}
 
-var p = factorial1/factorial3;
-var c = factorial1/(factorial2*factorial3);
+var cx = ax+bx;
+var cy = ay+by;
+var cz = az+bz;
+var cw = aw+bw;
 
-document.getElementById('p').value = p;
-document.getElementById('c').value = c;
+document.getElementById('cx').value = cx;
+document.getElementById('cy').value = cy;
+document.getElementById('cz').value = cz;
+document.getElementById('cw').value = cw;
 	
 }
 
@@ -56,7 +40,7 @@ td,p
 input
 {
     font-size:14pt;
-    width:100px;
+    width:80px;
 }
 select,form,option{
 width:100px;
@@ -71,34 +55,64 @@ font-size:14pt;
 </p>
 
 <table border="0" align="center" id="table">
+<tr>First Vector</tr>
 <tr>
-   <td align="right">N =</td>
-   <td><input id="n" type="number" onchange="calculate()"  ;autofocus /></td>
-</tr>
+   <td align="right"></td>
+   <td><input id="ax" type="number" onchange="calculate()"  ;autofocus /></td>
+  
+   <td align="right"></td>
+   <td><input id="ay" type="number" onchange="calculate()";/></td>
 
+      <td align="right"> </td>
+   <td><input id="az" type="number" onchange="calculate()"  ;autofocus /></td>
+
+         <td align="right"> </td>
+   <td><input id="aw" type="number" onchange="calculate()"  ;autofocus /></td>
+
+   
+   </table>
+ 
+ 
+<table border="0" align="center" id="table">
+<tr>Second Vector</tr>
 <tr>
-   <td align="right">r =</td>
-   <td><input id="r" type="number" onchange="calculate()"  ;autofocus /></td>
-</tr>
+   <td align="right"></td>
+   <td><input id="bx" type="number" onchange="calculate()"  ;autofocus /></td>
+  
+   <td align="right"></td>
+   <td><input id="by" type="number" onchange="calculate()";/></td>
 
+      <td align="right"></td>
+   <td><input id="bz" type="number" onchange="calculate()"  ;autofocus /></td>
 
+         <td align="right"> </td>
+   <td><input id="bw" type="number" onchange="calculate()"  ;autofocus /></td>
+
+   
+   </table>
+ 
+ 
+ 
+<table border="0" align="center" id="table">
+<tr>Summation of vector</tr>
 <tr>
+   <td align="right"></td>
+   <td><input id="cx" type="number";autofocus /></td>
+  
+   <td align="right"></td>
+   <td><input id="cy" type="number";/></td>
 
-   <td align="right">Permutation =</td>
-   <td><input id="p" type="number" onchange="calculate()";/></td>
+      <td align="right"> </td>
+   <td><input id="cz" type="number"  ;autofocus /></td>
 
-</tr>
+   
+      <td align="right"> </td>
+   <td><input id="cw" type="number"  ;autofocus /></td>
 
-<tr>
-
-   <td align="right">Combination =</td>
-   <td><input id="c" type="number" onchange="calculate()";/></td>
-
-</tr>
-
-
-</table>
-
+   </table>
+ 
+ 
+ 
 </tr>
 </table>
 </tr>

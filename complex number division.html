@@ -4,43 +4,19 @@
 function calculate()
 {
 
-var n =parseFloat(document.getElementById("n").value);
-var r =parseFloat(document.getElementById("r").value);
+var ax =parseFloat(document.getElementById("ax").value);
+var ay =parseFloat(document.getElementById("ay").value);
 
-if(n<0 || r<0){
-                 document.getElementById("warning").innerHTML = "Please enter a positive value.......";
-               }
-   if(n>=0 && r>0){
-                   document.getElementById("warning").innerHTML = "";
-                   }
+var bx =parseFloat(document.getElementById("bx").value);
+var by =parseFloat(document.getElementById("by").value);
 
-				   // find n !
-				   var factorial1 = 1;
-//recursive function
-for(i=1;i<=n;i++){
-factorial1 = factorial1 * i;
-}
+var c = (bx*bx) - (by*by);
 
-				   // find r !
-				   var factorial2 = 1;
-//recursive function
-for(i=1;i<=r;i++){
-factorial2 = factorial2 * i;
-}
+var cx = ((ax*bx) + (ay*by))/c ;
+var cy = (- (ax*by) + (ay*bx))/c;
 
-
-				   // find (n-r) !
-				   var factorial3 = 1;
-//recursive function
-for(i=1;i<=n-r;i++){
-factorial3 = factorial3 * i;
-}
-
-var p = factorial1/factorial3;
-var c = factorial1/(factorial2*factorial3);
-
-document.getElementById('p').value = p;
-document.getElementById('c').value = c;
+document.getElementById('cx').value = cx;
+document.getElementById('cy').value = cy;
 	
 }
 
@@ -56,7 +32,7 @@ td,p
 input
 {
     font-size:14pt;
-    width:100px;
+    width:80px;
 }
 select,form,option{
 width:100px;
@@ -72,33 +48,42 @@ font-size:14pt;
 
 <table border="0" align="center" id="table">
 <tr>
-   <td align="right">N =</td>
-   <td><input id="n" type="number" onchange="calculate()"  ;autofocus /></td>
-</tr>
+   <td align="right">First Number =</td>
+   <td><input id="ax" type="number" onchange="calculate()"  ;autofocus /></td>
+  
+   <td align="right">+ i</td>
+   <td><input id="ay" type="number" onchange="calculate()";/></td>
 
+      
+   </table>
+ 
+ 
+<table border="0" align="center" id="table">
 <tr>
-   <td align="right">r =</td>
-   <td><input id="r" type="number" onchange="calculate()"  ;autofocus /></td>
-</tr>
+   <td align="right"> Second Number =</td>
+   <td><input id="bx" type="number" onchange="calculate()"  ;autofocus /></td>
+  
+   <td align="right">+ i</td>
+   <td><input id="by" type="number" onchange="calculate()";/></td>
 
-
+      
+   </table>
+ 
+ 
+ 
+<table border="0" align="center" id="table">
 <tr>
+   <td align="right">division =</td>
+   <td><input id="cx" type="number";autofocus /></td>
+  
+   <td align="right">+ i</td>
+   <td><input id="cy" type="number";/></td>
 
-   <td align="right">Permutation =</td>
-   <td><input id="p" type="number" onchange="calculate()";/></td>
-
-</tr>
-
-<tr>
-
-   <td align="right">Combination =</td>
-   <td><input id="c" type="number" onchange="calculate()";/></td>
-
-</tr>
-
-
-</table>
-
+      
+   </table>
+ 
+ 
+ 
 </tr>
 </table>
 </tr>

@@ -1,50 +1,45 @@
 <!DOCTYPE html>
-<html>
 <script>
 function calculate()
 {
+  var input1 = parseFloat(document.getElementById("input1").value);
+ var input2 = parseFloat(document.getElementById("input2").value);
 
-var n =parseFloat(document.getElementById("n").value);
-var r =parseFloat(document.getElementById("r").value);
-
-if(n<0 || r<0){
+   if(input1<0 || input2<0){
                  document.getElementById("warning").innerHTML = "Please enter a positive value.......";
                }
-   if(n>=0 && r>0){
+   if(input1>=0 && input2>=0){
                    document.getElementById("warning").innerHTML = "";
                    }
 
-				   // find n !
-				   var factorial1 = 1;
-//recursive function
-for(i=1;i<=n;i++){
-factorial1 = factorial1 * i;
-}
 
-				   // find r !
-				   var factorial2 = 1;
-//recursive function
-for(i=1;i<=r;i++){
-factorial2 = factorial2 * i;
-}
+for(var i=0;i<input1unit.options.length;i++)
+    {
+	  if(input1unit.options[i].selected) input1unitid = i;
+    }
 
 
-				   // find (n-r) !
-				   var factorial3 = 1;
-//recursive function
-for(i=1;i<=n-r;i++){
-factorial3 = factorial3 * i;
-}
-
-var p = factorial1/factorial3;
-var c = factorial1/(factorial2*factorial3);
-
-document.getElementById('p').value = p;
-document.getElementById('c').value = c;
+for(var i=0;i<input2unit.options.length;i++)
+    {
+	  if(input2unit.options[i].selected) input2unitid = i;
+    }
 	
+scale = [1,0.3048,0.01,0.001,0.0254];
+
+var midinput1 = input1*scale[input1unitid];
+var midinput2 = input2*scale[input2unitid];
+
+var midoutput = 2*(midinput1+midinput2);
+
+for(var i=0;i<valueunit.options.length;i++)
+    {
+	  if(valueunit.options[i].selected) valueunitid = i;
+	  }
+
+var output = midoutput/scale[valueunitid];
+
+document.getElementById('value').value = output;
 }
-
-
 </script>
 <style>
 td,p
@@ -56,52 +51,83 @@ td,p
 input
 {
     font-size:14pt;
-    width:100px;
+    width:150px;
 }
+
 select,form,option{
-width:100px;
+width:120px;
 height:30px;
 size:30px;
 font-size:14pt;
 }
 </style>
+<body>
+<p id="warning" align="center"></p>
 
-<p id="warning" align="center">
-
-</p>
 
 <table border="0" align="center" id="table">
 <tr>
-   <td align="right">N =</td>
-   <td><input id="n" type="number" onchange="calculate()"  ;autofocus /></td>
+   <td align="right" class="principal" id="unitinputtable">
+    <td align="right">Length =</td>
+    </td>
+	   
+	   <td><input id="input1" type="number" onchange="calculate()" ;autofocus /></td>
+
+	   <td><form>
+                  <select name="input1unit" id="input1unit" onchange="calculate()">
+				  
+				          <option value="1">meter</option>
+                          <option value="2">foot</option>
+        				  <option value="3">centimeter</option>
+                          <option value="4">millimeter</option>
+        				  <option value="5">inch</option>
+                          
+                  </select>
+  
+        </form>
+  </td>
 </tr>
 
 <tr>
-   <td align="right">r =</td>
-   <td><input id="r" type="number" onchange="calculate()"  ;autofocus /></td>
+   <td align="right" class="principal" id="unitinputtable">
+    <td align="right">Width =</td>
+    </td>
+	   
+	   <td><input id="input2" type="number" onchange="calculate()" ;autofocus /></td>
+
+	   <td><form>
+                  <select name="input2unit" id="input2unit" onchange="calculate()">
+				  
+				          <option value="1">meter</option>
+                          <option value="2">foot</option>
+        				  <option value="3">centimeter</option>
+                          <option value="4">millimeter</option>
+        				  <option value="5">inch</option>
+                          
+                  </select>
+  
+        </form>
+  </td>
 </tr>
+
 
 
 <tr>
-
-   <td align="right">Permutation =</td>
-   <td><input id="p" type="number" onchange="calculate()";/></td>
-
+<td align="right" class="output1" id="unitoutputable"></td>
+<td align="right">Perimeter =</td>
+<td><input id="value" type="number" onchange="calculate()";/></td>
+<td><select name="heightunit" id="valueunit" onchange="calculate()">
+				  
+				          <option value="1">meter</option>
+                          <option value="2">foot</option>
+        				  <option value="3">centimeter</option>
+                          <option value="4">millimeter</option>
+        				  <option value="5">inch</option>
+                          
+    </select>
+</td>
 </tr>
-
-<tr>
-
-   <td align="right">Combination =</td>
-   <td><input id="c" type="number" onchange="calculate()";/></td>
-
-</tr>
-
-
 </table>
-
-</tr>
-</table>
-</tr>
 </body>
 </html><h1>All calculation</h1>
 <a href="http://www.calculation.net.in/area/"   rel=“dofollow”> Area  </a> <br/>
