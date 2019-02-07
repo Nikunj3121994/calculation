@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+
+<script>
+function calculate()
+{
+
+var input1 =parseFloat(document.getElementById("input1").value);
+var input2 =parseFloat(document.getElementById("input2").value);
+var midinput1;
+var midinput2;
+var midoutput;
+if(input1<0 || input2<0){
+document.getElementById("warning").innerHTML = "Please enter a positive value.......";
+}else{
+document.getElementById("warning").innerHTML = "";
+
+}
+
+for(var i=0;i<input1unit.options.length;i++)
+    {
+	  if(input1unit.options[i].selected) input1unitid = i;
+
+
+	  }
+
+
+switch(input1unitid){
+case 0:
+  midinput1 = input1 * 1;
+  break;
+
+  case 1:
+  midinput1 = input1 * 0.3048;
+  break;
+
+  case 2:
+  midinput1 = input1 * 0.01;
+  break;
+
+    case 3:
+  midinput1 = input1 * 0.001;
+	break;
+
+  case 4:
+  midinput1 = input1 * 0.0254;
+  break;
+
+  }
+
+for(var i=0;i<input2unit.options.length;i++)
+    {
+	  if(input2unit.options[i].selected) input2unitid = i;
+
+
+	  }
+
+switch(input2unitid){
+case 0:
+  midinput2 = input2 * 1;
+  break;
+
+  case 1:
+  midinput2 = input2 * 0.3048;
+  break;
+
+  case 2:
+  midinput2 = input2 * 0.01;
+  break;
+
+    case 3:
+  midinput2 = input2 * 0.001;
+	break;
+
+  case 4:
+  midinput2 = input2 * 0.0254;
+  }
+
+
+for(var i=0;i<valueunit.options.length;i++)
+    {
+	  if(valueunit.options[i].selected) valueunitid = i;
+
+
+	  }
+
+switch(valueunitid){
+case 0:
+  output = midoutput * 1;
+  break;
+
+  case 1:
+  output = midoutput / 0.09290304;
+ 
+  break;
+
+  case 2:
+output = midoutput / 1E-4;
+   break;
+
+    case 3:
+  output = midoutput / 1 E-6;
+  
+  break;
+
+  case 4:
+  output = midoutput / 6.4516 E-4;
+
+  break;
+
+  }
+
+
+document.getElementById('value').value = midinput1;
+
+	
+}
+</script>
+<Style>
+td,p
+{
+    font-size:20px;
+	
+}
+
+input
+{
+    font-size:14pt;
+    width:150px;
+}
+
+select,form,option{
+width:120px;
+height:30px;
+size:30px;
+font-size:14pt;
+}
+</style>
+
+<p id="warning" align="center">
+
+</p>
+
+<table border="0" align="center" id="table">
+<tr>
+   <td align="right" class="principal" id="unitinputtable">
+    <td align="right">Input 1 </td>
+  
+    </td>
+	   
+	   <td><input id="input1" type="number" onchange="calculate()" ;autofocus /></td>
+
+	   <td><form>
+                  <select name="input1unit" id="input1unit" onchange="calculate()">
+				  
+				          <option value="1">meter</option>
+                          <option value="2">foot</option>
+        				  <option value="3">centimeter</option>
+                          <option value="4">millimeter</option>
+        				  <option value="5">inch</option>
+                          
+                  </select>
+  
+        </form>
+  </td>
+</tr>
+<tr>
+   <td align="right" class="output" id="unitoutputtable">
+    
+ </td>
+    <td align="right">Input 2</td>
+    <td><input id="input2" type="number" onchange="calculate()";/></td>
+	<td><select name="heightunit" id="input2unit" onchange="calculate()">
+				  
+           			   <option value="1">meter</option>
+                          <option value="2">foot</option>
+        				  <option value="3">centimeter</option>
+                          <option value="4">millimeter</option>
+        				  <option value="5">inch</option>
+                         
+				          
+                  </select>
+				  </td>
+  
+	</tr>
+
+<tr>
+   <td align="right" class="output1" id="unitoutputable"></td>
+    <td align="right">Value</td>
+    <td><input id="Value" type="number" onchange="calculate()";/></td>
+     <td><select name="heightunit" id="valueunit" onchange="calculate()">
+				  
+				          <option value="1">Square meter</option>
+                          <option value="2">Square foot</option>
+        				  <option value="3">Square centimeter</option>
+                          <option value="4">Square millimeter</option>
+        				  <option value="5">Square inch</option>
+                          
+                  </select>
+				  </td>
+</tr>
+</table>
+</body>
+</html>

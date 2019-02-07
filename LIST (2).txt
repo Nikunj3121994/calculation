@@ -1,0 +1,29 @@
+<HTML>
+<BODY>
+<a href="http://www.calculation.co.in/mathcalculator/">Home</a><br/>
+<a href="http://www.calculation.co.in/mathcalculator/arithmetic-sequence/">Arithmetic Sequence</a><br/>
+<a href="http://www.calculation.co.in/mathcalculator/bmi-and-bmr-calculator/">BMI and BMR calculator</a><br/>
+<a href="http://www.calculation.co.in/mathcalculator/emi-calculator/">EMI calculator</a><br/>
+<a href="http://www.calculation.co.in/mathcalculator/exponent-calculator/">Exponent calculator</a><br/>
+<a href="http://www.calculation.co.in/mathcalculator/geometric-sequence/">Geometric Sequence</a><br/>
+<a href="http://www.calculation.co.in/mathcalculator/half-life/">Value after t time</a><br/>
+<a href="http://www.calculation.co.in/mathcalculator/half-time2/">Half time calculator</a><br/>
+<a href="http://www.calculation.co.in/mathcalculator/inflation-calculator/">Inflation Calculator</a><br/>
+<a href="http://www.calculation.co.in/mathcalculator/installment-calculator/">Installment Calculator</a><br/>
+<a href="http://www.calculation.co.in/mathcalculator/interest-calculator/">Interest calculator</a><br/>
+<a href="http://www.calculation.co.in/mathcalculator/interest-calculator-2/">Rate of Interest calculator</a><br/>
+<a href="http://www.calculation.co.in/mathcalculator/interest2/">Time Duration Calculator</a><br/>
+<a href="http://www.calculation.co.in/mathcalculator/interest3/">Compound Interest</a><br/>
+<a href="http://www.calculation.co.in/mathcalculator/log-value/">Log Value</a><br/>
+<a href="http://www.calculation.co.in/mathcalculator/percentage/">Percentage</a><br/>
+<a href="http://www.calculation.co.in/mathcalculator/percentage1/">Percentage</a><br/>
+<a href="http://www.calculation.co.in/mathcalculator/percentage2/">Percentage</a><br/>
+<a href="http://www.calculation.co.in/mathcalculator/percentage3/">Percentage</a><br/>
+<a href="http://www.calculation.co.in/mathcalculator/percentage4/">Percentage</a><br/>
+<a href="http://www.calculation.co.in/mathcalculator/percentage5/">Percentage</a><br/>
+<a href="http://www.calculation.co.in/mathcalculator/ratio/">Ratio</a><br/>
+<a href="http://www.calculation.co.in/mathcalculator/root/">Root</a><br/>
+<a href="http://www.calculation.co.in/mathcalculator/time/">Time(days)</a><br/>
+<a href="http://www.calculation.co.in/mathcalculator/time2/">Time(Year)</a><br/>
+</BODY>
+</HTML>

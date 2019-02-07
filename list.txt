@@ -1,0 +1,6 @@
+1.Interest calculator
+1.1.Simple interest
+1.2.Compound interest
+2.EMI calculator
+3.Inflation Calculator
+4.Price in different country
